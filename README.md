@@ -8,5 +8,6 @@ Play connect_four in the real world with the computer using OpenCV.
 * First connect FOUR chess WINS.
 * Enjoy!
 # YouTube Video link
+* <a href="https://www.youtube.com/watch?v=9t9uYzjskSs/">AI_Connect_Four_Opencv</a>
 # Screen_Images
 
