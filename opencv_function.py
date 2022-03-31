@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 
-
 class Opencv_Function():
     
     def videoCapture(self):

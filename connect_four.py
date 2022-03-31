@@ -91,7 +91,7 @@ class Connect_Four():
         pre_avialable_moves = list(self.available_moves(board_state))
         print("Can move position coordinate [O] : ", end = '')
         print(pre_avialable_moves)
-        
+
         if p_bottom == 1:
             while True:
                 success, img = cap.read()
