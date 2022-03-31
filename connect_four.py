@@ -87,6 +87,11 @@ class Connect_Four():
         flag_var = -1
 
         p_bottom, cap = self.cv_object.prepare()
+
+        pre_avialable_moves = list(self.available_moves(board_state))
+        print("Can move position coordinate [O] : ", end = '')
+        print(pre_avialable_moves)
+        
         if p_bottom == 1:
             while True:
                 success, img = cap.read()
@@ -132,6 +137,8 @@ class Connect_Four():
                                 board_state = self.apply_move(board_state, move, player_turn)
                                 if self.log:
                                     self.printboard(board_state)
+                                    print("Can move position coordinate [O] : ", end = '')
+                                    print(_avialable_moves)
 
                                 winner = self.has_winner(board_state, winning_length)
                                 if winner != 0:
@@ -202,9 +209,6 @@ class Connect_Four():
 
     # 玩家
     def real_player_opencv(self, board_state, _, pos):
-        moves = list(self.available_moves(board_state))
-        print("Can move position coordinate [O] : ", end = '')
-        print(moves)
         return pos
 
     def random_player(self, board_state, _):

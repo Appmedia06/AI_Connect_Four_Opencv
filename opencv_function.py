@@ -5,7 +5,7 @@ import numpy as np
 class Opencv_Function():
     
     def videoCapture(self):
-        cap = cv2.VideoCapture(1)
+        cap = cv2.VideoCapture(0)
         cap.set(3, 640)
         cap.set(4, 480)
 
@@ -27,6 +27,7 @@ class Opencv_Function():
 
         # x座標的中心點
         y_point_center = self.find_Contour(y_mask, contourimg)
+
 
 
         # 用X座標判斷是在哪個位子    
